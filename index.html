@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<!-- Note that there is no need to change any of the code in this page -->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Viewer Widget</title>
+<link href="_css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="container">
+  <header>
+    <h1>HTML | CSS | JS Product Viewer Widget Prototype </h1>
+  </header>
+  <main>
+    <div id="features">
+		<!-- loadFeature function trigger coded below -->
+      <section class="preview">
+		  <img src="_images/feature1.jpg" alt="Rich, Vivid Reproduction" onclick="loadFeature(this)">
+		</section>
+      <section class="preview">
+		  <img src="_images/feature2.jpg" alt="Asus ProArt Palette"  onclick="loadFeature(this)">
+		</section>
+      <section class="preview">
+		  <img src="_images/feature3.jpg" alt="Rich Connectivity"  onclick="loadFeature(this)" >
+		</section>
+      <section class="preview">
+		  <img src="_images/feature4.jpg" alt="Ergonomic Design"  onclick="loadFeature(this)" >
+		</section>
+    </div>
+	  <!-- restoreProduct function trigger coded below -->
+    <section id="stage" onclick="restoreProduct()">Professional Art Monitor</section>
+  </main>
+  <footer>
+    <p>IMED-2315 | Yulia Baranava | 2022</p>
+  </footer>
+</div>
+	<!-- reference to script file -->
+<script src="_scripts/JS_Product_Galleryv211.js"></script>
+	<!-- End of comments FV211 -->
+</body>
+</html>

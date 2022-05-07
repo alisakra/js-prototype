@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* FV211*/
+/* CSS Document*/
+/* Instructor note: Do not modify any of the CSS code */
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@600&family=Oswald:wght@200&display=swap');
+/*
+font-family: 'Blinker', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #f7f0e4;
+  font-family: 'Blinker', sans-serif;
+}
+#container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  margin-top: 0;
+}
+header {
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  background: #589;
+  padding-top: 0px;
+	padding: 1px;
+}
+header, h1 {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.preview {
+  border: 1px solid #ccc;
+  max-width: 50%;
+  flex: 1 1 50%;
+  border: 2px solid transparent;
+}
+.preview:hover {
+  border: 2px solid #666;
+}
+.preview img {
+  max-width: 50%;
+  height: auto;
+  cursor: pointer;
+  max-width: 100%;
+}
+#stage {
+  font-family: 'Oswald', sans-serif;
+  max-height: 1700px !important;
+  max-width: 1700px !important;
+  background-repeat: no-repeat;
+  background-image: url("../_images/feature0.jpg");
+  margin-bottom: 0px;
+	padding: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  background-size: contain;
+  flex: 1 1 75%;
+}
+
+footer {
+  padding-top: 0;
+  background: #589;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding-left: 10px;
+}
+main {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+}
+#features {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1 1 25%;
+  margin: 0;
+  padding: 0;
+}
+/*#viewer {
+  
+  max-height: 1700px;
+  max-width: 1700px;
+}*/
+@media only screen and (max-width: 800px) {
+  #wrapper {
+    width: 100%;
+  }
+  main {
+     flex-flow: column;
+  }
+  #features {
+    flex-flow: row wrap;
+  }
+  .preview {
+    flex: 1;
+  }
+  #stage {
+    background-size: contain;
+    flex: 0 1 800px;
+  }
+  footer {
+    position: sticky;
+    width: 100%;
+    bottom: 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+			#container {
+		width: 100%;
+		margin: 0;
+		height: 100vh;
+	}
+	
+	.preview {
+    flex: 50%;
+  }
+  #viewer {
+    background-size: contain;
+  }
+
+}
